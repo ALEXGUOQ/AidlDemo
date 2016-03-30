@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setComponent(new ComponentName("me.gryphon.aidldemo","me.gryphon.aidldemo.MyService"));
         bindService(intent,conn, Context.BIND_AUTO_CREATE);
-
     }
 
     public void addBook(View view) throws RemoteException {
